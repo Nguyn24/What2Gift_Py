@@ -1,0 +1,251 @@
+product_id,category,product_name,brand,price,stock,rating,num_reviews,description,sex
+1,shirt,"Áo Thun Nam Cổ Tròn","Canifa",159000,120,4.6,32,"Chất liệu cotton, thoáng mát",male
+2,shirt,"Áo Sơ Mi Nữ Công Sở","IVY Moda",249000,80,4.7,21,"Kiểu dáng thanh lịch, dễ phối",female
+3,pants,"Quần Jeans Nam Rách","Levi's",499000,60,4.5,18,"Phong cách trẻ trung, bền màu",male
+4,dress,"Váy Maxi Hoa Nhí","H&M",299000,40,4.8,25,"Dáng dài, họa tiết hoa nhí",female
+5,jacket,"Áo Khoác Bomber Nam","Routine",399000,50,4.6,19,"Chống gió, cá tính",male
+6,pants,"Quần Tây Nữ Lưng Cao","NEM",259000,70,4.4,13,"Lưng cao, tôn dáng",female
+7,shirt,"Áo Polo Nam Thêu Logo","Lacoste",599000,30,4.7,27,"Thêu logo, chất liệu cao cấp",male
+8,jacket,"Áo Khoác Dù Nữ","Uniqlo",349000,55,4.5,16,"Chống nước, nhẹ",female
+9,pants,"Quần Jogger Nam Thể Thao","Nike",299000,90,4.6,22,"Co giãn, thoải mái vận động",male
+10,dress,"Váy Xòe Chấm Bi","Zara",329000,35,4.8,14,"Chấm bi, nữ tính",female
+11,hoodie,"Áo Hoodie Nam Nữ","Local",199000,100,4.7,30,"Nỉ dày, ấm áp",unisex
+12,shorts,"Quần Short Jean Nữ","Canifa",189000,60,4.5,12,"Năng động, trẻ trung",female
+13,sweater,"Áo Len Cổ Lọ Nữ","H&M",259000,40,4.6,10,"Giữ ấm, thời trang",female
+14,jacket,"Áo Khoác Da Nam","Routine",799000,20,4.8,8,"Da thật, bền đẹp",male
+15,leggings,"Quần Legging Thể Thao","Nike",249000,70,4.7,15,"Co giãn, ôm dáng",female
+16,shirt,"Áo Sơ Mi Nam Trắng","IVY Moda",229000,80,4.5,18,"Cổ điển, dễ phối",male
+17,dress,"Váy Body Dự Tiệc","NEM",399000,25,4.6,9,"Tôn dáng, sang trọng",female
+18,jacket,"Áo Khoác Gió Nam","Uniqlo",349000,60,4.7,20,"Chống gió, nhẹ",male
+19,pants,"Quần Kaki Nam","Canifa",259000,70,4.4,11,"Lịch sự, thoải mái",male
+20,shirt,"Áo Thun Nữ In Hình","Local",159000,90,4.5,13,"In hình dễ thương",female
+21,vest,"Áo Vest Nam Công Sở","Routine",899000,15,4.8,7,"Lịch lãm, sang trọng",male
+22,pants,"Quần Culottes Nữ","H&M",299000,50,4.6,12,"Dáng rộng, thoải mái",female
+23,jacket,"Áo Khoác Jean Nam","Levi's",599000,25,4.7,10,"Jean bền, cá tính",male
+24,dress,"Váy Suông Nữ","Zara",329000,40,4.5,14,"Dáng suông, dễ mặc",female
+25,shirt,"Áo Thun Nam In Chữ","Local",169000,110,4.6,17,"In chữ nổi bật",male
+26,pants,"Quần Jogger Nữ","Nike",299000,60,4.7,11,"Thể thao, năng động",female
+27,jacket,"Áo Khoác Nỉ Nam","Canifa",249000,80,4.5,15,"Nỉ dày, giữ ấm",male
+28,pants,"Quần Tây Nam","IVY Moda",259000,70,4.4,13,"Lịch sự, dễ phối",male
+29,dress,"Váy Xếp Ly Nữ","NEM",299000,45,4.6,9,"Xếp ly, nữ tính",female
+30,shirt,"Áo Polo Nữ","Lacoste",599000,30,4.7,8,"Chất liệu cao cấp",female
+31,jacket,"Áo Khoác Dù Nam","Uniqlo",349000,55,4.5,16,"Chống nước, nhẹ",male
+32,shorts,"Quần Short Nam","Nike",199000,90,4.6,22,"Thoáng mát, thể thao",male
+33,dress,"Váy Đầm Dạ Hội","Zara",799000,20,4.8,6,"Sang trọng, nổi bật",female
+34,hoodie,"Áo Hoodie Nữ","Local",199000,100,4.7,30,"Nỉ dày, ấm áp",female
+35,pants,"Quần Jean Nữ Rách","Levi's",499000,60,4.5,18,"Phong cách trẻ trung",female
+36,sweater,"Áo Len Nam","H&M",259000,40,4.6,10,"Giữ ấm, thời trang",male
+37,jacket,"Áo Khoác Da Nữ","Routine",799000,20,4.8,8,"Da thật, bền đẹp",female
+38,leggings,"Quần Legging Nữ","Nike",249000,70,4.7,15,"Co giãn, ôm dáng",female
+39,shirt,"Áo Sơ Mi Nữ Trắng","IVY Moda",229000,80,4.5,18,"Cổ điển, dễ phối",female
+40,dress,"Váy Body Nữ","NEM",399000,25,4.6,9,"Tôn dáng, sang trọng",female
+41,jacket,"Áo Khoác Gió Nữ","Uniqlo",349000,60,4.7,20,"Chống gió, nhẹ",female
+42,pants,"Quần Kaki Nữ","Canifa",259000,70,4.4,11,"Lịch sự, thoải mái",female
+43,shirt,"Áo Thun Nam In Hình","Local",159000,90,4.5,13,"In hình dễ thương",male
+44,vest,"Áo Vest Nữ Công Sở","Routine",899000,15,4.8,7,"Lịch lãm, sang trọng",female
+45,pants,"Quần Culottes Nam","H&M",299000,50,4.6,12,"Dáng rộng, thoải mái",male
+46,jacket,"Áo Khoác Jean Nữ","Levi's",599000,25,4.7,10,"Jean bền, cá tính",female
+47,dress,"Váy Suông Nam","Zara",329000,40,4.5,14,"Dáng suông, dễ mặc",male
+48,shirt,"Áo Thun Nữ In Chữ","Local",169000,110,4.6,17,"In chữ nổi bật",female
+49,pants,"Quần Jogger Nam","Nike",299000,60,4.7,11,"Thể thao, năng động",male
+50,jacket,"Áo Khoác Nỉ Nữ","Canifa",249000,80,4.5,15,"Nỉ dày, giữ ấm",female
+51,shirt,"Áo Thun Nam Basic","Canifa",159000,130,4.6,25,"Cotton mềm, thoáng mát",male
+52,shirt,"Áo Sơ Mi Nữ Tay Phồng","IVY Moda",269000,75,4.7,19,"Thiết kế tay phồng nữ tính",female
+53,pants,"Quần Jeans Nam Slim Fit","Levi's",549000,50,4.6,14,"Ôm dáng, chất liệu jean cao cấp",male
+54,dress,"Váy Hoa Dáng Xòe","Zara",339000,40,4.7,12,"Dáng xòe, họa tiết hoa nhí",female
+55,jacket,"Áo Khoác Dạ Nữ","Routine",499000,35,4.8,10,"Dày dặn, giữ ấm tốt",female
+56,pants,"Quần Tây Nam Công Sở","NEM",269000,65,4.5,11,"Lịch sự, dễ phối đồ",male
+57,shirt,"Áo Polo Nam Basic","Lacoste",599000,30,4.7,20,"Chất liệu pique, thấm hút tốt",male
+58,jacket,"Áo Khoác Gió Thể Thao","Uniqlo",359000,55,4.6,18,"Nhẹ, chống gió hiệu quả",unisex
+59,pants,"Quần Jogger Nam Bo Gấu","Nike",309000,80,4.6,21,"Vải co giãn, thoải mái vận động",male
+60,dress,"Váy Midi Nữ","H&M",319000,40,4.8,16,"Dáng midi cổ điển, dễ phối",female
+61,hoodie,"Áo Hoodie Unisex Basic","Local",209000,95,4.7,25,"Phong cách đường phố",unisex
+62,shorts,"Quần Short Thể Thao Nam","Nike",219000,85,4.6,17,"Chất liệu nhẹ, thoáng khí",male
+63,sweater,"Áo Len Cổ Tròn Nam","H&M",259000,45,4.5,10,"Giữ ấm, dễ phối với áo khoác",male
+64,jacket,"Áo Khoác Jean Trẻ Trung","Levi's",599000,30,4.7,12,"Jean xước nhẹ, phong cách",unisex
+65,leggings,"Quần Legging Yoga Nữ","Nike",259000,70,4.8,14,"Co giãn, thoải mái khi tập luyện",female
+66,shirt,"Áo Sơ Mi Nam Kẻ Sọc","IVY Moda",239000,75,4.5,15,"Kẻ sọc thời trang",male
+67,dress,"Váy Dạ Hội Dài","Zara",799000,20,4.9,7,"Dáng dài, sang trọng",female
+68,jacket,"Áo Khoác Dù Có Mũ","Uniqlo",359000,60,4.6,13,"Chống nước, dễ gấp gọn",unisex
+69,pants,"Quần Kaki Dáng Suông Nam","Canifa",269000,70,4.4,11,"Thoải mái, lịch sự",male
+70,shirt,"Áo Thun Nữ Form Rộng","Local",179000,100,4.6,20,"Form rộng, phong cách hiện đại",female
+71,vest,"Áo Vest Nam Slim Fit","Routine",899000,18,4.8,6,"Dáng ôm, lịch lãm",male
+72,pants,"Quần Baggy Nữ","H&M",299000,55,4.5,10,"Dáng baggy, trẻ trung",female
+73,jacket,"Áo Khoác Len Nữ","NEM",399000,45,4.6,9,"Giữ ấm, nhẹ nhàng",female
+74,dress,"Váy Công Sở Nữ","IVY Moda",319000,35,4.7,11,"Phù hợp môi trường làm việc",female
+75,shirt,"Áo Polo Nữ Basic","Lacoste",599000,28,4.8,8,"Cổ bẻ, vải pique cao cấp",female
+76,jacket,"Áo Khoác Phao Nam","Uniqlo",499000,40,4.7,14,"Cực nhẹ, giữ ấm tốt",male
+77,pants,"Quần Jogger Nữ Ống Rộng","Nike",319000,60,4.7,12,"Phong cách thể thao năng động",female
+78,dress,"Váy Suông Kẻ Caro","Zara",339000,35,4.5,10,"Caro cổ điển, dễ thương",female
+79,shirt,"Áo Thun In Graphic Nam","Local",189000,95,4.6,17,"In hình độc đáo",male
+80,hoodie,"Áo Hoodie Basic Nữ","Local",209000,100,4.7,22,"Dày dặn, unisex",female
+81,pants,"Quần Tây Nữ Ống Loe","NEM",279000,65,4.6,11,"Ôm đùi, loe nhẹ",female
+82,jacket,"Áo Khoác Da Lộn Nam","Routine",799000,22,4.8,7,"Chất liệu giả da cao cấp",male
+83,dress,"Váy Ngắn Dáng Ôm","H&M",319000,45,4.6,10,"Tôn dáng, cá tính",female
+84,shirt,"Áo Sơ Mi Nữ Họa Tiết","IVY Moda",269000,60,4.7,13,"Họa tiết tinh tế, trẻ trung",female
+85,pants,"Quần Jean Nữ Skinny","Levi's",519000,55,4.6,16,"Co giãn, tôn dáng",female
+86,jacket,"Áo Khoác Thể Thao Nữ","Nike",379000,50,4.7,15,"Thoáng khí, năng động",female
+87,leggings,"Quần Legging Cotton Nữ","Nike",249000,70,4.7,13,"Mềm mại, co giãn tốt",female
+88,shirt,"Áo Thun Nam In Logo","Local",179000,100,4.5,15,"Logo in nổi bật",male
+89,dress,"Váy Công Chúa Nữ","Zara",359000,25,4.8,9,"Dáng bồng, dịu dàng",female
+90,jacket,"Áo Khoác Gió Có Lớp Lót","Uniqlo",369000,60,4.6,12,"Chống gió, giữ nhiệt",unisex
+91,hoodie,"Áo Hoodie Nam Local Brand","Local",219000,95,4.7,18,"Nỉ dày, chất streetwear",male
+92,pants,"Quần Kaki Nữ Trơn","Canifa",259000,70,4.5,11,"Cổ điển, dễ phối",female
+93,shirt,"Áo Polo Nam Cổ Sọc","Lacoste",619000,30,4.8,10,"Cổ sọc tinh tế",male
+94,dress,"Váy Dài Bohemian","H&M",339000,30,4.7,8,"Phong cách boho tự do",female
+95,sweater,"Áo Len Dệt Kim Nữ","Zara",279000,40,4.6,9,"Mềm mịn, ấm áp",female
+96,jacket,"Áo Khoác Jean Oversize","Levi's",619000,28,4.8,10,"Form rộng, cá tính",unisex
+97,pants,"Quần Ống Rộng Nữ","NEM",299000,50,4.5,9,"Thoáng, thanh lịch",female
+98,shirt,"Áo Sơ Mi Nam Caro","IVY Moda",239000,70,4.6,13,"Caro cổ điển, năng động",male
+99,dress,"Váy Ôm Tay Dài","Zara",389000,30,4.7,11,"Tôn dáng, thanh lịch",female
+100,jacket,"Áo Khoác Hoodie Zip Nam","Routine",349000,55,4.6,10,"Khóa kéo, dễ mặc",male
+101,watch,"Đồng Hồ Nam Dây Da","Casio",1299000,40,4.7,22,"Chống nước, mặt tròn cổ điển",male
+102,watch,"Đồng Hồ Nữ Dây Kim Loại","Daniel Wellington",1899000,30,4.8,18,"Sang trọng, tinh tế",female
+103,wallet,"Ví Da Nam Gập Đôi","Routine",399000,50,4.6,12,"Da thật, nhỏ gọn",male
+104,wallet,"Ví Nữ Mini","NEM",299000,60,4.7,10,"Dễ thương, tiện dụng",female
+105,bag,"Túi Xách Nữ Công Sở","Charles & Keith",899000,35,4.8,9,"Thời trang, tiện lợi",female
+106,bag,"Ba Lô Nam Thể Thao","Nike",499000,45,4.6,14,"Chống nước, nhiều ngăn",male
+107,shoes,"Giày Sneaker Nam","Adidas",1299000,50,4.7,20,"Đế cao su, thoáng khí",male
+108,shoes,"Giày Cao Gót Nữ","Zara",699000,35,4.8,11,"Thiết kế tinh tế, êm chân",female
+109,hat,"Mũ Lưỡi Trai Nam","Canifa",159000,80,4.6,13,"Chống nắng, phong cách",male
+110,hat,"Mũ Beret Nữ","H&M",199000,60,4.7,8,"Phong cách cổ điển",female
+111,accessory,"Dây Chuyền Bạc Nữ","PNJ",499000,40,4.8,10,"Bạc cao cấp, sang trọng",female
+112,accessory,"Vòng Tay Da Nam","Routine",249000,55,4.6,9,"Phong cách cá tính",male
+113,belt,"Thắt Lưng Nam Da Thật","Levi's",399000,45,4.7,11,"Bền đẹp, khóa kim loại",male
+114,belt,"Thắt Lưng Nữ Mảnh","NEM",259000,60,4.6,10,"Tôn dáng, phối đồ dễ",female
+115,scarf,"Khăn Choàng Len Nữ","Uniqlo",299000,70,4.8,13,"Giữ ấm, mềm mại",female
+116,scarf,"Khăn Lụa Họa Tiết","IVY Moda",349000,50,4.7,12,"Họa tiết sang trọng",female
+117,socks,"Vớ Nam Cổ Ngắn","Canifa",69000,120,4.5,17,"Thoáng khí, thấm hút",male
+118,socks,"Vớ Nữ Cổ Cao","H&M",89000,100,4.6,15,"Giữ ấm, co giãn",female
+119,glasses,"Kính Mát Nam","Ray-Ban",1299000,25,4.8,10,"Chống UV, thời trang",male
+120,glasses,"Kính Mát Nữ","Gucci",1999000,20,4.9,8,"Sang trọng, chống nắng",female
+121,watch,"Đồng Hồ Thông Minh","Apple",7990000,30,4.9,20,"Theo dõi sức khỏe, GPS",unisex
+122,bag,"Túi Tote Nữ","Local",259000,70,4.6,14,"Dung tích lớn, phong cách trẻ",female
+123,bag,"Cặp Laptop Nam","Samsonite",999000,40,4.7,12,"Chống sốc, sang trọng",male
+124,wallet,"Ví Da Cầm Tay Nữ","H&M",349000,50,4.6,9,"Thời trang, nhỏ gọn",female
+125,shoes,"Giày Thể Thao Nữ","Nike",1199000,45,4.8,18,"Êm chân, nhẹ",female
+126,hat,"Mũ Bucket","Local",189000,75,4.6,13,"Phong cách đường phố",unisex
+127,accessory,"Nhẫn Bạc Đôi","PNJ",599000,30,4.8,10,"Thiết kế tinh tế, ý nghĩa",unisex
+128,belt,"Thắt Lưng Nam Khóa Tự Động","Routine",449000,40,4.7,8,"Da mềm, tiện dụng",male
+129,scarf,"Khăn Lụa Vuông","Zara",279000,45,4.6,10,"Mềm mịn, tinh tế",female
+130,glasses,"Kính Cận Gọng Tròn","Gentle Monster",2990000,15,4.9,6,"Nhẹ, thời thượng",unisex
+131,bag,"Túi Đeo Chéo Nam","Routine",399000,50,4.6,11,"Gọn nhẹ, tiện dụng",male
+132,bag,"Túi Đeo Vai Nữ","NEM",459000,40,4.7,9,"Thanh lịch, phối đồ dễ",female
+133,watch,"Đồng Hồ Cặp Đôi","Citizen",2599000,20,4.8,7,"Thiết kế đôi, tinh tế",unisex
+134,accessory,"Khuyên Tai Nữ Tròn","PNJ",399000,50,4.7,8,"Nhỏ nhắn, thanh lịch",female
+135,shoes,"Giày Da Nam Công Sở","Routine",899000,35,4.7,9,"Bóng đẹp, lịch sự",male
+136,shoes,"Giày Sandal Nữ","H&M",299000,55,4.6,11,"Thoải mái, nữ tính",female
+137,hat,"Mũ Len Giữ Ấm","Uniqlo",159000,65,4.7,10,"Chống lạnh, co giãn",unisex
+138,socks,"Vớ Thể Thao Nam","Nike",99000,90,4.7,13,"Chống trượt, thoáng khí",male
+139,bag,"Ba Lô Du Lịch","The North Face",899000,30,4.8,12,"Dung tích lớn, bền",unisex
+140,wallet,"Ví Mini Unisex","Local",199000,70,4.6,10,"Nhỏ gọn, tiện lợi",unisex
+141,watch,"Đồng Hồ Cơ Nam","Orient",3299000,20,4.8,6,"Lộ máy, sang trọng",male
+142,glasses,"Kính Mát Thời Trang","Prada",2499000,15,4.9,7,"Cao cấp, phong cách",female
+143,belt,"Thắt Lưng Nữ Da Bò","Zara",359000,45,4.6,9,"Bền, tinh tế",female
+144,accessory,"Vòng Cổ Choker","Local",159000,60,4.5,12,"Phong cách cá tính",female
+145,bag,"Túi Đeo Hông Nam","Nike",299000,65,4.6,10,"Nhỏ gọn, tiện lợi",male
+146,scarf,"Khăn Len Nam","Routine",299000,55,4.7,8,"Giữ ấm, phối vest đẹp",male
+147,hat,"Mũ Snapback","Local",189000,70,4.6,11,"Trẻ trung, cá tính",unisex
+148,shoes,"Giày Lười Nam","Canifa",599000,40,4.6,10,"Thoải mái, dễ mang",male
+149,bag,"Túi Đeo Chéo Canvas","Local",259000,60,4.7,9,"Chất vải dày, trẻ trung",unisex
+150,accessory,"Dây Buộc Tóc Nữ","H&M",69000,100,4.5,14,"Mềm mại, dễ thương",female
+151,watch,"Đồng Hồ Thông Minh Chống Nước","Xiaomi",2299000,45,4.7,18,"Theo dõi sức khỏe, chống nước IP68",unisex
+152,watch,"Đồng Hồ Nam Dây Kim Loại","Seiko",3199000,30,4.8,14,"Mặt tròn sang trọng, dây thép không gỉ",male
+153,watch,"Đồng Hồ Nữ Mặt Vuông","Citizen",2699000,25,4.8,11,"Phong cách vintage, tinh tế",female
+154,bag,"Túi Đeo Vai Da Nam","Routine",499000,50,4.6,10,"Da tổng hợp, sang trọng",male
+155,bag,"Túi Đeo Vai Nhỏ Nữ","Charles & Keith",699000,35,4.8,9,"Thiết kế tinh tế, hợp thời trang",female
+156,bag,"Ba Lô Laptop Chống Nước","Samsonite",1099000,40,4.8,12,"Ngăn đựng laptop, chống nước tốt",unisex
+157,wallet,"Ví Dài Da Bò","Levi's",499000,60,4.7,8,"Da thật, sang trọng",male
+158,wallet,"Ví Nữ Dây Kéo","NEM",299000,70,4.6,9,"Nhỏ gọn, tiện dụng",female
+159,shoes,"Giày Sneaker Trắng","Adidas",1199000,80,4.8,16,"Phù hợp mọi outfit, đế êm",unisex
+160,shoes,"Giày Tây Da Bóng","Routine",899000,30,4.7,7,"Dành cho dân công sở",male
+161,shoes,"Giày Búp Bê Nữ","H&M",299000,55,4.6,11,"Êm chân, dễ phối đồ",female
+162,hat,"Mũ Lưỡi Trai Classic","Nike",199000,90,4.6,12,"Logo in nổi bật, thoáng khí",unisex
+163,hat,"Mũ Len Phối Lông","Uniqlo",259000,65,4.7,9,"Giữ ấm, co giãn tốt",female
+164,accessory,"Dây Chuyền Vàng 18K","PNJ",5490000,15,4.9,6,"Vàng 18K cao cấp, sang trọng",female
+165,accessory,"Nhẫn Nam Bạc Đúc","PNJ",399000,30,4.8,7,"Đơn giản, mạnh mẽ",male
+166,accessory,"Khuyên Tai Đính Đá","PNJ",459000,40,4.8,10,"Lấp lánh, tinh tế",female
+167,belt,"Thắt Lưng Nam Dây Canvas","Local",259000,60,4.6,11,"Thể thao, trẻ trung",male
+168,belt,"Thắt Lưng Da Mảnh","Zara",349000,55,4.7,10,"Phối đồ thanh lịch",female
+169,scarf,"Khăn Choàng Cashmere","H&M",459000,50,4.8,12,"Cực mềm, giữ ấm tốt",unisex
+170,scarf,"Khăn Lụa Trơn","IVY Moda",319000,40,4.6,9,"Phong cách thanh lịch",female
+171,socks,"Vớ Nam Cotton","Canifa",79000,110,4.5,13,"Thoáng khí, co giãn",male
+172,socks,"Vớ Nữ Cổ Ngắn","H&M",69000,100,4.5,12,"Mềm mại, dễ giặt",female
+173,glasses,"Kính Cận Gọng Vuông","Gentle Monster",2890000,20,4.9,7,"Thời trang, nhẹ",unisex
+174,glasses,"Kính Mát Gọng Tròn","Ray-Ban",1599000,25,4.8,8,"Chống UV, hợp khuôn mặt tròn",unisex
+175,perfume,"Nước Hoa Nam Classic","Dior",3299000,30,4.9,9,"Hương gỗ trầm nam tính",male
+176,perfume,"Nước Hoa Nữ Bloom","Gucci",3599000,25,4.9,10,"Hương hoa nhẹ nhàng, quyến rũ",female
+177,perfume,"Nước Hoa Unisex Citrus","CK",2899000,20,4.7,6,"Hương chanh tươi mát, trung tính",unisex
+178,bag,"Túi Du Lịch Cỡ Lớn","The North Face",999000,35,4.8,11,"Đựng nhiều đồ, bền chắc",unisex
+179,bag,"Túi Cầm Tay Nam Da Thật","Routine",699000,30,4.7,8,"Chất da bóng, sang trọng",male
+180,bag,"Túi Clutch Dự Tiệc","Zara",599000,40,4.8,10,"Phù hợp tiệc đêm",female
+181,wallet,"Ví Nam Đựng Card","Local",249000,70,4.6,9,"Nhỏ gọn, tiện lợi",male
+182,wallet,"Ví Mini Dây Đeo","NEM",279000,55,4.7,8,"Phong cách dễ thương",female
+183,watch,"Đồng Hồ Thể Thao","G-Shock",2599000,50,4.8,15,"Chống sốc, chịu nước 200m",male
+184,watch,"Đồng Hồ Nữ Dây Vải","DW",1899000,40,4.8,12,"Tinh tế, nhẹ nhàng",female
+185,accessory,"Lắc Tay Đôi","Local",199000,60,4.6,10,"Biểu tượng tình yêu",unisex
+186,accessory,"Dây Buộc Tóc Scrunchie","H&M",69000,90,4.5,13,"Co giãn, dễ thương",female
+187,shoes,"Giày Lười Da Lộn","Routine",649000,40,4.7,9,"Êm chân, thoáng khí",male
+188,shoes,"Giày Cao Gót Mũi Nhọn","Zara",799000,30,4.8,10,"Tôn dáng, thanh lịch",female
+189,hat,"Mũ Rộng Vành Nữ","IVY Moda",299000,45,4.7,9,"Chống nắng, quý phái",female
+190,hat,"Mũ Snapback Nam","Local",189000,70,4.6,10,"Phong cách streetwear",male
+191,bag,"Ba Lô Thời Trang Nữ","Local",329000,60,4.6,11,"Nhẹ, tiện lợi",female
+192,bag,"Cặp Công Sở Nam","Samsonite",1099000,35,4.8,10,"Chống sốc, cao cấp",male
+193,glasses,"Kính Mát Oversize Nữ","Prada",2599000,20,4.9,7,"Cực thời trang",female
+194,glasses,"Kính Cận Gọng Kim Loại","Gentle Monster",3190000,15,4.9,6,"Cao cấp, nhẹ",unisex
+195,perfume,"Nước Hoa Nam Fresh","Chanel",3699000,20,4.9,8,"Tươi mát, sang trọng",male
+196,perfume,"Nước Hoa Nữ Sweet","YSL",3599000,25,4.9,9,"Ngọt ngào, quyến rũ",female
+197,belt,"Thắt Lưng Nam Trơn","Levi's",399000,45,4.7,9,"Chất liệu da thật",male
+198,belt,"Thắt Lưng Nữ Đính Đá","NEM",299000,40,4.6,8,"Phong cách sang trọng",female
+199,bag,"Túi Tote Vải Canvas","Local",249000,80,4.6,12,"Thời trang, thân thiện môi trường",unisex
+200,bag,"Túi Xách Tay Cao Cấp","Charles & Keith",999000,25,4.9,10,"Phong cách quý phái",female
+201,accessory,"Dây Chuyền Nam Da Đen","Routine",259000,55,4.6,9,"Cá tính, mạnh mẽ",male
+202,accessory,"Khuyên Tai Bạc Nhỏ","PNJ",299000,50,4.7,8,"Dễ phối đồ",female
+203,accessory,"Vòng Tay Thép Không Gỉ","Local",229000,60,4.6,9,"Hiện đại, tinh tế",unisex
+204,scarf,"Khăn Choàng Lụa In Logo","Gucci",4990000,20,4.9,7,"Cao cấp, tinh xảo",female
+205,scarf,"Khăn Choàng Len Dày","Routine",299000,55,4.7,8,"Phù hợp mùa đông",male
+206,socks,"Vớ Cổ Cao Logo","Nike",99000,100,4.6,11,"Đôi vớ thể thao chuẩn trend",unisex
+207,socks,"Vớ Nữ Pastel","H&M",89000,90,4.6,10,"Màu nhẹ, dễ thương",female
+208,glasses,"Kính Râm Phi Công","Ray-Ban",1799000,25,4.8,9,"Chống nắng tốt, cổ điển",male
+209,hat,"Mũ Lông Mùa Đông","Uniqlo",279000,50,4.7,7,"Cực ấm, dễ thương",female
+210,bag,"Túi Đeo Ngực Nam","Nike",299000,65,4.7,9,"Thời trang, tiện lợi",male
+211,watch,"Đồng Hồ SmartFit Gen2","Samsung",6990000,25,4.8,12,"Theo dõi sức khỏe, GPS",unisex
+212,wallet,"Ví Nam Cầm Tay Da Sần","Routine",449000,45,4.7,10,"Da sần, sang trọng",male
+213,wallet,"Ví Nữ Dài Dây Kéo","Zara",359000,55,4.6,9,"Thời trang, đựng được điện thoại",female
+214,bag,"Túi Đeo Vai Thời Trang","Local",269000,70,4.6,10,"Dễ phối outfit",unisex
+215,accessory,"Vòng Cổ Chữ Cái","PNJ",399000,40,4.8,9,"Cá nhân hóa, tinh tế",female
+216,shoes,"Giày Sneaker Classic","Vans",999000,60,4.7,13,"Form retro, phong cách",unisex
+217,shoes,"Giày Boot Da Nữ","Zara",899000,40,4.8,9,"Chống nước, thời trang",female
+218,shoes,"Giày Thể Thao Nam Chạy Bộ","Nike",1399000,50,4.8,11,"Đệm êm, nhẹ",male
+219,bag,"Ba Lô Dành Cho Học Sinh","Local",299000,75,4.6,9,"Bền, đựng laptop 14 inch",unisex
+220,accessory,"Dây Đeo Đồng Hồ Da","Casio",199000,80,4.5,8,"Thay nhanh, mềm",unisex
+221,glasses,"Kính Mát Gọng Dày","Prada",2599000,18,4.9,6,"Cá tính, cao cấp",female
+222,hat,"Mũ Fedora Nam","Local",299000,40,4.7,7,"Phong cách quý ông",male
+223,perfume,"Nước Hoa Hương Gỗ","Burberry",3399000,20,4.8,7,"Mạnh mẽ, hiện đại",male
+224,perfume,"Nước Hoa Nữ Floral","Chanel",3899000,25,4.9,9,"Hương hoa thanh lịch",female
+225,wallet,"Ví Unisex Dạng Zip","Local",229000,70,4.6,8,"Dành cho cả nam và nữ",unisex
+226,belt,"Thắt Lưng Thời Trang Nam","Routine",399000,45,4.7,9,"Khóa kim loại sáng bóng",male
+227,belt,"Thắt Lưng Nữ Vintage","H&M",299000,50,4.6,8,"Phong cách cổ điển",female
+228,scarf,"Khăn Lụa Dài","Zara",299000,40,4.7,7,"Dễ phối đồ, sang trọng",female
+229,socks,"Vớ Nam Dệt Kim","Canifa",79000,120,4.5,10,"Bền, thoáng khí",male
+230,glasses,"Kính Mát Vuông Nam","Ray-Ban",1699000,22,4.8,8,"Phong cách cổ điển",male
+231,bag,"Túi Đeo Chéo Mini","Local",239000,65,4.6,8,"Dành cho đi chơi, dạo phố",female
+232,watch,"Đồng Hồ Quartz","Citizen",2599000,25,4.8,9,"Chính xác, sang trọng",unisex
+233,watch,"Đồng Hồ Trẻ Em","Casio",899000,40,4.7,10,"Chống nước, nhẹ",unisex
+234,perfume,"Nước Hoa Mini","YSL",1499000,35,4.8,9,"Nhỏ gọn, dễ mang theo",female
+235,accessory,"Vòng Cổ Nam Bản To","Routine",289000,45,4.6,8,"Cá tính, mạnh mẽ",male
+236,wallet,"Ví Da Vintage","Levi's",399000,40,4.7,9,"Màu nâu cổ điển",male
+237,bag,"Túi Xách Tay Trơn","NEM",459000,30,4.7,8,"Đơn giản, sang trọng",female
+238,hat,"Mũ Dệt Kim","Uniqlo",199000,60,4.6,7,"Giữ ấm, co giãn",unisex
+239,scarf,"Khăn Choàng Mỏng Mùa Hè","H&M",199000,70,4.6,8,"Nhẹ, thoáng mát",female
+240,shoes,"Giày Slip-on","Vans",899000,50,4.7,9,"Dễ mang, thoải mái",unisex
+241,shoes,"Giày Cao Gót Quai Ngang","Zara",799000,30,4.8,7,"Tôn chân, sang trọng",female
+242,perfume,"Nước Hoa Nam Woody","Dior",3499000,20,4.9,8,"Hương trầm mạnh mẽ",male
+243,glasses,"Kính Cận Gọng Đen","Gentle Monster",2890000,20,4.9,7,"Sang trọng, hợp mọi khuôn mặt",unisex
+244,bag,"Túi Crossbody Nhỏ","Local",259000,65,4.7,9,"Thời trang, tiện dụng",unisex
+245,accessory,"Khuyên Tai Trái Tim","PNJ",299000,40,4.7,9,"Dễ thương, tinh tế",female
+246,belt,"Thắt Lưng Nam Bản Lớn","Levi's",449000,45,4.7,8,"Mạnh mẽ, bền chắc",male
+247,bag,"Túi Tote Basic","Local",239000,70,4.6,9,"Chất vải dày, casual",unisex
+248,perfume,"Nước Hoa Nữ Rose","Gucci",3699000,25,4.9,9,"Hương hoa hồng nhẹ nhàng",female
+249,watch,"Đồng Hồ Nam Automatic","Orient",3299000,20,4.8,8,"Lộ cơ, cổ điển",male
+250,glasses,"Kính Râm Thể Thao","Oakley",1799000,25,4.8,9,"Bám chắc, chống tia UV",unisex
