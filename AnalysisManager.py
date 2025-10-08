@@ -1,15 +1,23 @@
 import uuid
 import ast
+import os
 import pandas as pd
 from typing import Dict, List, Optional
 from ollama import chat  # type: ignore
+from dotenv import load_dotenv
 
 
+# ====== 🔧 Load .env for local or Render environment ======
+load_dotenv()
+
+OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
+OLLAMA_API_BASE_URL = os.getenv("OLLAMA_API_BASE_URL", "https://api.ollama.ai")
 PROMPT_TEMPLATE = "ollama_prompt.txt"
 DATABASE = "database.csv"
 MODEL = "llama3.2:3b"
 
 
+# ====== 💬 Session management ======
 class Session:
     def __init__(self, session_id: Optional[str] = None) -> None:
         self.session_id = session_id or str(uuid.uuid4())
@@ -37,6 +45,7 @@ class Session:
         self.system_context = context
 
 
+# ====== 🧠 Analysis Manager ======
 class AnalysisManager:
     def __init__(self) -> None:
         self.data = self._load_data()
@@ -54,9 +63,7 @@ class AnalysisManager:
     def _load_system_prompt(self) -> str:
         """Load system prompt from ollama_prompt.txt file"""
         try:
-            prompt = PROMPT_TEMPLATE
-
-            with open(str(prompt), 'r', encoding='utf-8') as file:
+            with open(PROMPT_TEMPLATE, 'r', encoding='utf-8') as file:
                 return file.read().strip()
         except FileNotFoundError:
             raise FileNotFoundError(
@@ -85,21 +92,26 @@ class AnalysisManager:
         user_content: str,
         system_content: Optional[str] = None
     ) -> str:
+        """Send messages to Ollama model and stream response"""
         if system_content:
             session.set_system_context(system_content)
 
         session.add_session('user', user_content)
-
         chat_history = session.get_context_history()
 
         final_response = ""
-        for partial in chat(
-            model=MODEL,
-            messages=chat_history,
-            stream=True
-        ):
-            if partial.message.content is not None:
-                final_response += partial.message.content
+        try:
+            # ====== 🔑 Secure API Call to Ollama ======
+            for partial in chat(
+                model=MODEL,
+                messages=chat_history,
+                stream=True,
+                options={"base_url": OLLAMA_API_BASE_URL, "api_key": OLLAMA_API_KEY}
+            ):
+                if partial.message and partial.message.content:
+                    final_response += partial.message.content
+        except Exception as e:
+            raise RuntimeError(f"Ollama API error: {str(e)}")
 
         session.add_session('assistant', final_response)
         return final_response
@@ -112,7 +124,6 @@ class AnalysisManager:
         """Main response function using ollama with session support"""
         try:
             session = self.get_or_create_session(session_id)
-
             base_system_prompt = self._load_system_prompt()
 
             user_prompt = (
@@ -133,25 +144,23 @@ class AnalysisManager:
                 session = self.get_or_create_session()
                 session_id = session.session_id
             return (
-                "Error occurred while processing your form: "
-                f"{str(e)}"
-            ), session_id
+                "Error occurred while processing your request: "
+                f"{str(e)}",
+                session_id
+            )
 
     def search_products(self, filter_dict: dict) -> List[dict]:
         """
         Search for products based on filter criteria
-
         Args:
             filter_dict: Dictionary containing filter criteria:
                 - category: str - Product category
                 - sex: str - Gender filter (male/female/unisex)
                 - min_price: float - Minimum price
                 - max_price: float - Maximum price
-
         Returns:
             List[dict]: List of products matching the criteria
         """
-
         mask = pd.Series([True] * len(self.data))
 
         category = filter_dict.get("category")
@@ -175,13 +184,5 @@ class AnalysisManager:
         return []
 
     def get_all_products(self, question, session_id):
-        """
-        Get all products in the database
-
-        Args:
-            question: str - User question (not used here)
-            session_id: Optional[str] - Session ID (not used here)
-        Returns:
-            Tuple[List[dict], str]: List of all products and session ID
-        """
+        """Get all products in the database"""
         return self._model_response(question, session_id)
