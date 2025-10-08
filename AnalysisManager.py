@@ -37,7 +37,7 @@ class AnalysisManager:
         self.sessions: Dict[str, Session] = {}
 
         # ✅ Tạo client Ollama, cho phép đọc từ ENV nếu bạn deploy
-        host = os.getenv("OLLAMA_API_BASE_URL", "http://localhost:11434")
+        host = os.getenv("OLLAMA_API_BASE_URL", "http://host.docker.internal:11434/")
         self.client = Client(host=host)
 
     def _load_data(self) -> pd.DataFrame:
