@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: product-ai-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn API:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OLLAMA_API_BASE_URL
+        value: http://localhost:11434
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    healthCheckPath: /
+    plan: free
