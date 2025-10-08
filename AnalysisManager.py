@@ -11,10 +11,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
-OLLAMA_API_BASE_URL = os.getenv("OLLAMA_API_BASE_URL", "https://api.ollama.ai")
+OLLAMA_API_BASE_URL = os.getenv("OLLAMA_API_BASE_URL", "http://localhost:11434")
 PROMPT_TEMPLATE = "ollama_prompt.txt"
 DATABASE = "database.csv"
-MODEL = "llama3.2:3b"
+MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 
 
 # ====== 💬 Session management ======
