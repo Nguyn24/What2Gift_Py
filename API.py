@@ -89,12 +89,22 @@ async def get_all_products(prompt: GiftPrompt):
 
         # Nếu AI không tìm thấy sản phẩm
         if isinstance(products, list) and len(products) == 0:
-            fallback_products = analysis_manager.search_products({})
+            # Try rule-based filtering as fallback instead of returning all products
+            filter_dict = analysis_manager._rule_based_filtering_from_database(question_data)
+            fallback_products = analysis_manager.search_products(filter_dict)
+            
+            if len(fallback_products) == 0:
+                # If still no products, return all products as last resort
+                fallback_products = analysis_manager.search_products({})
+                note = "No products matched criteria, returned all products"
+            else:
+                note = "AI found no products, used rule-based filtering"
+            
             return {
                 "status": "success_with_fallback",
                 "prompt": question_data,
                 "session_id": session_id,
-                "note": "No products matched AI criteria, returned all products",
+                "note": note,
                 "total_products": len(fallback_products),
                 "products": fallback_products[:50]
             }
