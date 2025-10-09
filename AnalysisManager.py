@@ -184,7 +184,7 @@ class AnalysisManager:
         # Map Vietnamese to database categories
         category_mapping = {
             'áo sơ mi': 'shirt', 'áo thun': 'shirt', 'áo polo': 'shirt',
-            'quần jeans': 'pants', 'quần tây': 'pants', 'quần jogger': 'pants',
+            'quần jeans': 'pants', 'quần tây': 'pants', 'quần jogger': 'pants', 'quần': 'pants',
             'váy': 'dress', 'đầm': 'dress',
             'áo khoác': 'jacket', 'áo bomber': 'jacket', 'áo dù': 'jacket',
             'áo hoodie': 'hoodie', 'áo nỉ': 'hoodie',
@@ -194,7 +194,7 @@ class AnalysisManager:
             'áo vest': 'vest', 'áo gile': 'vest',
             'đồng hồ': 'watch',
             'ví': 'wallet', 'ví da': 'wallet',
-            'túi xách': 'bag', 'balo': 'bag', 'cặp': 'bag',
+            'túi xách': 'bag', 'balo': 'bag', 'cặp': 'bag', 'túi': 'bag',
             'giày': 'shoes', 'dép': 'shoes', 'sandal': 'shoes',
             'mũ': 'hat', 'nón': 'hat',
             'phụ kiện': 'accessory', 'đồ phụ kiện': 'accessory',
@@ -205,22 +205,47 @@ class AnalysisManager:
             'nước hoa': 'perfume', 'perfume': 'perfume'
         }
         
-        # Extract category from preferences
+        # Extract category from preferences (check both 'preferences' and 'Preferences')
+        preferences_key = None
         if 'preferences' in question_data and question_data['preferences']:
-            pref = question_data['preferences'].lower()
-            for viet, eng in category_mapping.items():
-                if viet in pref:
-                    filter_dict['category'] = eng
-                    break
+            preferences_key = 'preferences'
+        elif 'Preferences' in question_data and question_data['Preferences']:
+            preferences_key = 'Preferences'
+            
+        if preferences_key:
+            pref = question_data[preferences_key].lower().strip()
+            
+            # First try exact match
+            if pref in category_mapping:
+                filter_dict['category'] = category_mapping[pref]
+            else:
+                # Then try partial match
+                for viet, eng in category_mapping.items():
+                    if viet in pref or pref in viet:
+                        filter_dict['category'] = eng
+                        break
+                # If still no match, try direct English category names
+                if 'category' not in filter_dict:
+                    available_categories = ['shirt', 'pants', 'dress', 'jacket', 'hoodie', 'shorts', 
+                                          'sweater', 'leggings', 'vest', 'watch', 'wallet', 'bag', 
+                                          'shoes', 'hat', 'accessory', 'belt', 'scarf', 'socks', 
+                                          'glasses', 'perfume']
+                    for cat in available_categories:
+                        if cat in pref:
+                            filter_dict['category'] = cat
+                            break
         
         # Map gender
         if 'sex' in question_data:
-            sex = question_data['sex'].lower()
-            if sex in ['nam', 'male']:
+            sex = question_data['sex'].lower().strip()
+            if sex in ['nam', 'male', 'đàn ông', 'anh', 'bố', 'ba', 'cha', 'ông']:
                 filter_dict['sex'] = 'male'
-            elif sex in ['nữ', 'female']:
+            elif sex in ['nữ', 'female', 'phụ nữ', 'chị', 'em gái', 'mẹ', 'má', 'bà']:
                 filter_dict['sex'] = 'female'
+            elif sex in ['trẻ em', 'bé', 'con']:
+                filter_dict['sex'] = 'unisex'
             else:
+                # Default to unisex if unclear
                 filter_dict['sex'] = 'unisex'
         
         # Parse budget based on database price range (69k - 7.99M)
@@ -229,22 +254,23 @@ class AnalysisManager:
                 budget_str = question_data['budget'].replace('.', '').replace(',', '').replace('đ', '').replace('vnd', '').strip()
                 budget = int(budget_str)
                 
-                # Smart price ranges based on database
+                # Smart price ranges based on database - NEVER exceed budget
                 if budget < 200000:
                     filter_dict['min_price'] = 69000
-                    filter_dict['max_price'] = 200000
+                    filter_dict['max_price'] = budget  # Don't exceed budget
                 elif budget < 500000:
                     filter_dict['min_price'] = int(budget * 0.5)
-                    filter_dict['max_price'] = int(budget * 1.2)
+                    filter_dict['max_price'] = budget  # Don't exceed budget
                 elif budget < 1000000:
                     filter_dict['min_price'] = int(budget * 0.6)
-                    filter_dict['max_price'] = int(budget * 1.3)
+                    filter_dict['max_price'] = budget  # Don't exceed budget
                 elif budget < 3000000:
                     filter_dict['min_price'] = int(budget * 0.7)
-                    filter_dict['max_price'] = int(budget * 1.4)
+                    filter_dict['max_price'] = budget  # Don't exceed budget
                 else:
-                    filter_dict['min_price'] = int(budget * 0.8)
-                    filter_dict['max_price'] = 7990000
+                    # For high budgets, set reasonable range within database limits
+                    filter_dict['min_price'] = 69000
+                    filter_dict['max_price'] = min(budget, 7990000)  # Don't exceed budget or database max
             except:
                 filter_dict['min_price'] = 69000
                 filter_dict['max_price'] = 500000
@@ -255,8 +281,14 @@ class AnalysisManager:
         try:
             session = self.get_or_create_session(session_id)
             
-            # Try Hugging Face API first if available
-            if self.hf_available:
+            # ✅ Ưu tiên rule-based filtering vì AI model không ổn định
+            if isinstance(question, dict):
+                filter_dict = self._rule_based_filtering_from_database(question)
+                products = self.search_products(filter_dict)
+                return (products, session.session_id)
+            
+            # Try Hugging Face API as fallback for string questions
+            if self.hf_available and isinstance(question, str):
                 try:
                     base_system_prompt = self._load_system_prompt()
                     user_prompt = f"User question: {question}\n\nAvailable categories: {', '.join(self.categories)}"
@@ -273,16 +305,10 @@ class AnalysisManager:
                     # Nếu không parse được hoặc không hợp lệ
                     return (f"Error occurred: Invalid AI response format -> {response}", session.session_id)
                 except Exception as e:
-                    # AI failed, fallback to rule-based
-                    pass
-            
-            # Fallback to rule-based filtering (MIỄN PHÍ)
-            if isinstance(question, dict):
-                filter_dict = self._rule_based_filtering_from_database(question)
-                products = self.search_products(filter_dict)
-                return (products, session.session_id)
+                    # AI failed, fallback to all products
+                    return (self.search_products({}), session.session_id)
             else:
-                # If question is string, return all products
+                # If question is string and no AI, return all products
                 return (self.search_products({}), session.session_id)
 
         except Exception as e:
