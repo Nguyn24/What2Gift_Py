@@ -15,11 +15,12 @@ app = FastAPI(
 # Thêm CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],  # FE local
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Khởi tạo AnalysisManager
 analysis_manager = AnalysisManager()
