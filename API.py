@@ -13,9 +13,15 @@ app = FastAPI(
 )
 
 # Thêm CORS middleware
+origins = [
+    "http://localhost:5173",  # local FE khi dev
+    "https://corvus-fe.vercel.app",  # ✅ FE đã deploy trên Vercel
+    "https://what2gift-api.onrender.com/swagger/index.html",  # backend chính
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # FE local
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
